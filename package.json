@@ -11,7 +11,8 @@
 		"build": "tsc && node -e \"require('fs').chmodSync('build/mcp-adjust.js', '755')\"",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix .",
-		"postinstall": "npm run build"
+		"postinstall": "npm run build",
+		"dev": "npm run build && npx @modelcontextprotocol/inspector node build/mcp-adjust.js"
 	},
 	"repository": {
 		"type": "git",
