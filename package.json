@@ -1,6 +1,6 @@
 {
 	"name": "mcp-adjust",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Adjust Reporting MCP server",
 	"main": "mcp-adjust.js",
 	"type": "module",
