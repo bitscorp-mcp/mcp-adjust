@@ -1,17 +1,18 @@
 {
 	"name": "mcp-adjust",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "Adjust Reporting MCP server",
-	"main": "index.js",
+	"main": "mcp-adjust.js",
 	"type": "module",
 	"bin": {
-		"mcp-adjust": "./build/index.js"
+		"mcp-adjust": "./build/mcp-adjust.js"
 	},
 	"scripts": {
-		"build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+		"build": "tsc && node -e \"require('fs').chmodSync('build/mcp-adjust.js', '755')\"",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix .",
-		"postinstall": "npm run build"
+		"postinstall": "npm run build",
+		"dev": "npm run build && npx @modelcontextprotocol/inspector node build/mcp-adjust.js"
 	},
 	"repository": {
 		"type": "git",

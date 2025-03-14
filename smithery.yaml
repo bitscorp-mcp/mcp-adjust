@@ -16,7 +16,7 @@ startCommand:
     |-
     (config) => ({
       command: 'node',
-      args: ['build/index.js', config.apiKey]
+      args: ['build/mcp-adjust.js', config.apiKey]
     })
   exampleConfig:
     apiKey: "123456"

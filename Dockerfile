@@ -22,4 +22,4 @@ RUN npx tsc && \
 ENV ADJUST_API_KEY=123456
 
 # Define the CMD to run the MCP server using the Adjust API key
-CMD ["node", "build/index.js", "${ADJUST_API_KEY}"]
+CMD ["node", "build/mcp-adjust.js", "${ADJUST_API_KEY}"]
