@@ -10,17 +10,31 @@ class AdjustApiClient {
 
   constructor(private config: AdjustApiConfig) {
     this.axiosInstance = axios.create({
-      baseURL: config.baseUrl || "https://api.adjust.com",
+      baseURL: config.baseUrl || "https://automate.adjust.com",
       headers: {
-        Authorization: `Bearer ${config.apiKey}`,
+        "Authorization": `Bearer ${config.apiKey}`,
         "Content-Type": "application/json",
       },
     });
   }
 
-  async getReport(endpoint: string, params?: Record<string, any>) {
+  async fetchReports(date: string, params: Record<string, any> = {}) {
     try {
-      const response = await this.axiosInstance.get(endpoint, { params });
+      // Build query parameters
+      const queryParams: Record<string, any> = {
+        ...params
+      };
+
+      // If date_period is not provided, use the date parameter
+      if (!queryParams.date_period) {
+        queryParams.date_period = date;
+      }
+
+      // Make the request to the reports-service endpoint
+      const response = await this.axiosInstance.get('/reports-service/report', {
+        params: queryParams
+      });
+
       return response.data;
     } catch (error) {
       console.error("Adjust API Error:", error);
@@ -28,17 +42,15 @@ class AdjustApiClient {
     }
   }
 
-  async fetchReports(date = "2024-03-10", additionalParams = {}) {
-    try {
-      const data = await this.getReport("/reports", {
-        date,
-        ...additionalParams,
-      });
-      return data;
-    } catch (error) {
-      console.error("Failed to fetch reports", error);
-      throw error;
-    }
+  // Example method to fetch a specific report with common parameters
+  async getStandardReport(appTokens: string[], dateRange: string, metrics: string[] = ["installs", "sessions", "revenue"]) {
+    return this.fetchReports(dateRange, {
+      app_token__in: appTokens.join(','),
+      date_period: dateRange,
+      dimensions: "app,partner_name,campaign,day",
+      metrics: metrics.join(','),
+      ad_spend_mode: "network"
+    });
   }
 }
 
