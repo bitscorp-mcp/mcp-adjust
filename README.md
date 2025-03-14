@@ -1,5 +1,5 @@
 # Adjust MCP
-[![smithery badge](https://smithery.ai/badge/@bitscorp-mcp/mcp-adjust)](https://smithery.ai/server/@bitscorp-mcp/mcp-adjust)
+[![smithery badge](https://smithery.ai/badge/@dragonkhoi/adjust-mcp)](https://smithery.ai/server/@dragonkhoi/adjust-mcp)
 
 Simple MCP server that interfaces with the Adjust API, allowing you to talk to your Adjust data from any MCP client like Cursor or Claude Desktop. Query reports, metrics, and performance data. Great for on-demand look ups like: "What's the install numbers for the Feb 1 campaign?"
 
@@ -13,7 +13,7 @@ Make sure to get your Adjust API key from your Adjust account settings.
 To install mcp-adjust for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@bitscorp-mcp/mcp-adjust):
 
 ```bash
-npx -y @smithery/cli install @bitscorp-mcp/mcp-adjust --client claude
+npx -y @smithery/cli install @bitscorp/mcp-adjust --client claude
 ```
 
 To install mcp-adjust for Cursor, go to Settings -> Cursor Settings -> Features -> MCP Servers -> + Add
