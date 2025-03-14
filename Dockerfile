@@ -14,4 +14,4 @@ RUN npm run build
 # Expose MCP default port if needed (MCP over stdio, so not exposing ports)
 
 # Default command: Expecting user to provide Adjust API Key
-CMD ["node", "build/index.js", "YOUR_ADJUST_API_KEY"]
+CMD ["node", "build/mcp-adjust.js", "YOUR_ADJUST_API_KEY"]

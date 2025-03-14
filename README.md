@@ -27,7 +27,7 @@ npx -y @smithery/cli@latest run @bitscorp/mcp-adjust --config "{\"apiKey\":\"YOU
 Clone this repo
 Run `npm run build`
 Paste this command into Cursor (or whatever MCP Client)
-`node /ABSOLUTE/PATH/TO/adjust-mcp/build/index.js YOUR_ADJUST_API_KEY`
+`node /ABSOLUTE/PATH/TO/adjust-mcp/build/mcp-adjust.js YOUR_ADJUST_API_KEY`
 
 ## Examples
 - use adjust report revenue for the last 7 days
