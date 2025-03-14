@@ -1,0 +1,55 @@
+{
+	"name": "mcp-adjust",
+	"version": "1.0.0",
+	"description": "Adjust Reporting MCP server",
+	"main": "index.js",
+	"type": "module",
+	"bin": {
+		"mcp-adjust": "./dist/mcp-adjust.js"
+	},
+	"scripts": {
+		"build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix .",
+		"postinstall": "npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/platformatic/mcp-adjust.git"
+	},
+	"license": "MIT",
+	"author": "Platformatic Inc. <oss@platformatic.dev> (https://platformatic.dev)",
+	"contributors": [
+		{
+			"name": "Alexandr Korsak",
+			"email": "alex@bitscorp.co"
+		}
+	],
+	"bugs": {
+		"url": "https://github.com/bitscorp-mcp/mcp-adjust/issues"
+	},
+	"homepage": "https://github.com/bitscorp-mcp/mcp-adjust#readme",
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.6.0",
+		"axios": "^1.8.3",
+		"node-notifier": "^10.0.1",
+		"zod": "^3.24.2"
+	},
+	"devDependencies": {
+		"@types/node": "^22.13.5",
+		"@types/node-notifier": "^8.0.5",
+		"eslint": "^9.21.0",
+		"neostandard": "^0.12.1",
+		"typescript": "^5.7.3"
+	},
+	"keywords": [
+		"mcp",
+		"model-context-protocol",
+		"ai",
+		"nodejs",
+		"javascript-runtime"
+	],
+	"engines": {
+		"node": ">=22.0.0"
+	}
+}
