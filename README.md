@@ -20,7 +20,7 @@ To install adjust-mcp for Cursor, go to Settings -> Cursor Settings -> Features 
 
 Select Type: command and paste the below, using your API key from Adjust
 ```
-npx -y @smithery/cli@latest run @dragonkhoi/adjust-mcp --config "{\"apiKey\":\"YOUR_ADJUST_API_KEY\"}"
+npx -y @smithery/cli@latest run @bitscorp/mcp-adjust --config "{\"apiKey\":\"YOUR_ADJUST_API_KEY\"}"
 ```
 
 ### Clone and run locally
