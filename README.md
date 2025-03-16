@@ -1,5 +1,5 @@
 # Adjust MCP
-[![smithery badge](https://smithery.ai/badge/@dragonkhoi/adjust-mcp)](https://smithery.ai/server/@dragonkhoi/adjust-mcp)
+[![smithery badge](https://smithery.ai/badge/@bitscorp-mcp/mcp-adjust)](https://smithery.ai/badge/@bitscorp-mcp/mcp-adjust)
 
 Simple MCP server that interfaces with the Adjust API, allowing you to talk to your Adjust data from any MCP client like Cursor or Claude Desktop. Query reports, metrics, and performance data. Great for on-demand look ups like: "What's the install numbers for the Feb 1 campaign?"
 

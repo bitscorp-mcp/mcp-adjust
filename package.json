@@ -16,10 +16,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/platformatic/mcp-adjust.git"
+		"url": "git+https://github.com/bitscorp-mcp/mcp-adjust.git"
 	},
 	"license": "MIT",
-	"author": "Platformatic Inc. <oss@platformatic.dev> (https://platformatic.dev)",
+	"author": "Alexandr Korsak <alex@bitscorp.co> (https://bitscorp.co)",
 	"contributors": [
 		{
 			"name": "Alexandr Korsak",
