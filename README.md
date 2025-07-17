@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/bitscorp-mcp-mcp-adjust-badge.jpg)](https://mseep.ai/app/bitscorp-mcp-mcp-adjust)
+
 # Adjust MCP
 [![smithery badge](https://smithery.ai/badge/@bitscorp-mcp/mcp-adjust)](https://smithery.ai/badge/@bitscorp-mcp/mcp-adjust)
 
